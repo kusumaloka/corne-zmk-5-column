@@ -143,6 +143,11 @@
             bindings = <&cut_macro>;
             key-positions = <14 26>;
         };
+
+        combo_ss {
+            bindings = <&ss_macro>;
+            key-positions = <14 37>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -151,22 +156,29 @@
         copy_macro: copy_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(C)>;
+            bindings = <&kp LC(C)>;
             label = "COPY_MACRO";
         };
 
         paste_macro: paste_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(V)>;
+            bindings = <&kp LC(V)>;
             label = "PASTE_MACRO";
         };
 
         cut_macro: cut_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(X)>;
+            bindings = <&kp LC(X)>;
             label = "CUT_MACRO";
+        };
+
+        ss_macro: ss_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(S))>;
+            label = "SS_MACRO";
         };
     };
 
