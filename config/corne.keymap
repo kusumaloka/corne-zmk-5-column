@@ -149,6 +149,11 @@
             bindings = <&ss_macro>;
             key-positions = <14 37>;
         };
+
+        combo_plainss {
+            bindings = <&pastewithoutediting_macro>;
+            key-positions = <4 16 28>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -180,6 +185,13 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LS(S))>;
             label = "SS_MACRO";
+        };
+
+        pastewithoutediting_macro: pastewithoutediting_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(V))>;
+            label = "PASTEWITHOUTEDITING_MACRO";
         };
     };
 
