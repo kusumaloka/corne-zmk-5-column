@@ -110,11 +110,6 @@
             key-positions = <10 22>;
         };
 
-        layout_switch {
-            bindings = <&tog 4>;
-            key-positions = <36 37 40 41>;
-        };
-
         system_reset {
             bindings = <&sys_reset>;
             key-positions = <3 4 5>;
@@ -153,6 +148,11 @@
         combo_plainss {
             bindings = <&pastewithoutediting_macro>;
             key-positions = <4 16 28>;
+        };
+
+        combo_capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <13 25>;
         };
     };
 
@@ -231,15 +231,6 @@
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &none   &none   &none   &none   &trans
 &trans  &bootloader   &sys_reset    &none         &bt BT_CLR    &bt BT_CLR_ALL    &none   &trans  &trans  &trans  &trans  &trans
                                     &trans        &trans        &trans            &trans  &trans  &trans
-            >;
-        };
-
-        caps_layer {
-            bindings = <
-&none  &kp LS(Q)  &kp LS(W)  &kp LS(E)         &kp LS(R)     &kp LS(T)      &kp LS(Y)    &kp LS(U)                  &kp LS(I)         &kp LS(O)  &kp LS(P)      &none
-&none  &kp LS(A)  &kp LS(S)  &kp LS(D)         &kp LS(F)     &kp LS(G)      &kp LS(H)    &kp LS(J)                  &kp LS(K)         &kp LS(L)  &kp SEMICOLON  &none
-&none  &kp LS(Z)  &kp LS(X)  &kp LS(C)         &kp LS(V)     &kp LS(B)      &kp LS(N)    &kp LS(M)                  &kp COMMA         &kp DOT    &kp FSLH       &none
-                             &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 2 SPACE    &lt 1 ENTER  &mt RIGHT_SHIFT BACKSPACE  &mt LEFT_ALT ESC
             >;
         };
     };
