@@ -145,7 +145,7 @@
             key-positions = <14 37>;
         };
 
-        combo_plainss {
+        combo_plainpaste {
             bindings = <&pastewithoutediting_macro>;
             key-positions = <4 16 28>;
         };
